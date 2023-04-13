@@ -1,0 +1,57 @@
+body{
+    background-color: #1b2838;
+    color: #f7df1d;
+    font-family: 'Orbitron';
+}
+
+
+h1{
+    font-style: bold;
+    font-size: 45px;
+}
+
+td>img{
+    width:300px;
+    margin-top: 5px;
+}
+
+#fade{
+    border: solid;
+    border-width: 5px;
+    border-color: #9f3870;
+    border-radius: 10px;
+}
+#yoru{
+    border: solid;
+    border-width: 5px;
+    border-color: #4d4f9e;
+    border-radius: 10px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 750px;
+    table-layout: fixed;
+}
+
+td, th{
+    border: solid;
+    border-width: 2px;
+    border-color: #f7df1d;
+    border-radius: 10px;
+}
+
+td{
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.mergedCells{
+    letter-spacing: 15px;
+}
+
+section{
+    margin-top: 10px;
+}

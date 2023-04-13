@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+body { margin: 0; padding: 0; overflow: hidden; font-family: 'Orbitron';}
+canvas { width: 100%; height: 100%; background-color: #f2fbff; z-index: 2; }
+
+.connecting {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    z-index: 4;
+}
+
+.displayScore{
+    display: block;
+    z-index: 3;
+    position: fixed;
+    right: 10px;
+    width: 40px;
+    top: 10px;
+    background-color: #0653ec;
+    border-radius: 10px;
+    color: #f2fbff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.invisible {
+    display: none;
+}
+
+.login {
+    left: 44vw;
+    right: 50vw;
+    top: 35vh;
+    bottom: 50vh;
+    width: 12vw;
+    min-width: 200px;
+    height: 10vh;
+    min-height: 200px;
+    position: fixed;
+    z-index: 5;
+}
+
+.loginElementsCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: dashed;
+    border-color: rgb(168, 163, 163);
+}
+
+.loginElementsCont > * {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.loginElementsCont > h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+
+.loginElementsCont > button{
+    background-color: #4CAF50;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: #f2fbff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.popup {
+	position: fixed;
+	display: none;
+	top: 10px;
+	right: 10px;
+	background-color:rgba(0, 0, 0, 0.196);
+	z-index: 1;
+	backdrop-filter: blur(3px);
+    width: 15vw;
+    height: 25vh;
+    min-height: 300px;
+    min-width: 200px;
+    border-radius: 25px;
+}
+
+.popup.visible {
+	display: block;
+	animation: slideUp .4s cubic-bezier(0.165, 0.84, 0.44, 1), fadeIn .3s cubic-bezier(0.19, 1, 0.22, 1);
+	animation-fill-mode: both;
+}
+
+.close{
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    background-color: #e51d1d;
+    border-radius: 10px;
+    color: #f2fbff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 40px;
+}
+
+.restartForm {
+    position: fixed;
+    left: 42vw;
+    right: 50vw;
+    top: 40vh;
+    bottom: 50vh;
+    width: 12vw;
+    min-width: 300px;
+    height: 10vh;
+    min-height: 300px;
+    z-index: 8;
+}
+
+.restartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: dashed;
+    border-color: rgb(168, 163, 163);
+}
+
+.restartContainer > button {
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    color: #f2fbff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.scoreCont{
+    min-width: 100%;
+}
+
+th {
+    border: solid;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+th:last-child {
+    border-right: 0px;
+}
+label {
+    font-family: 'Roboto', sans-serif;}
+
+.status {
+    min-width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: dashed;
+    border-color: rgb(168, 163, 163);
+}
+
+.status > tr > td{
+    text-align: center;
+}
+
+.crdBtn {
+    position: fixed;
+    display: block;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    min-width: 100px;
+    min-height: 30px;
+    max-height: 30px;
+    max-width: 100px;
+    border-radius: 8px;
+    background-color: #4531ba;
+    color: #f2fbff;
+    z-index: 10;
+    left: 10px;
+    top: 10px;
+}
